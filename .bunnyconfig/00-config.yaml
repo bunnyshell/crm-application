@@ -8,8 +8,8 @@ exec_once:
     group: root
     content: |
       <VirtualHost *:80>
-        DocumentRoot /var/www/html/orocrm
-        <Directory /var/www/html/orocrm>
+        DocumentRoot /var/www/html/orocrm/web
+        <Directory /var/www/html/orocrm/web>
           AllowOverride All
           Order Allow,Deny
           Allow from All
