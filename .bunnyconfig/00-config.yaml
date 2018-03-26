@@ -23,8 +23,8 @@ exec_once:
    name: Run composer install
    command: |
      #!/usr/bin/env bash
-     export COMPOSER_HOME=/usr/local/bin/.composer
-     /usr/local/bin/composer install
+     export COMPOSER_HOME=/usr/local/bin/.composer 
+     /usr/local/bin/composer install --no-interaction
 post_app_deploy:
  execs:
   Restart apache:
